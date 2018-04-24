@@ -1,0 +1,15 @@
+mongo:
+  port: 27017
+  pvSpace: 5Gi
+  pvStorageClass: pd-ssd
+
+promo:
+  namespace: promo
+  imgTag: latest
+  gRPC:
+    port: 8080
+  web:
+    port: 8081  
+  consul:
+    url: "35.194.131.144:8500"
+    path: promoConfig
